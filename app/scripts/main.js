@@ -1,7 +1,6 @@
 /* jshint devel:true */
 console.log('\'Allo \'Allo!');
-$(function(){
-  var map = new GMaps({
+var map = new GMaps({
     el:'#map',
     lat:25.0221324,
     lng:121.547979
@@ -9,13 +8,18 @@ $(function(){
   map.addMarker({
     lat:25.0221324,
     lng:121.547979,
-    title:"DO!T 共創公域"
-  })
+    title:"DO!T 共創公域",
+    infoWindow: {
+      content: '<p style="color:#999;">DO!T 共創公域</p>'
+    }
+  });
+$(function(){
   $('#fullpage').fullpage(
     {
       fixedElements:".header .footer",
+      autoScrolling: false,
       fitToSection: false,
-      //verticalCentered: false,
+      verticalCentered: false,
 
       paddingTop:'60px',
       paddingBottom:'40px',
@@ -23,4 +27,5 @@ $(function(){
       menu: '#menu'
     }
   );
-})
+  var s = skrollr.init();
+});

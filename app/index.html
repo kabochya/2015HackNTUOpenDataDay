@@ -40,7 +40,7 @@
            </div>
            <div class="collapse navbar-collapse" id="header-bar">
             <ul class="nav navbar-nav navbar-right" id="menu">
-              <li class="active" data-menuanchor="top"><a href="#top">TOP</a></li>
+              <li ><a href="#top">TOP</a></li>
               <li data-menuanchor="why"><a href="#why">Why?</a></li>
               <li data-menuanchor="who"><a href="#who">Who?</a></li>
               <li data-menuanchor="what"><a href="#what">What?</a></li>
@@ -76,7 +76,15 @@
       <div id="fullpage">
         <div class="section">
           <div class="container">
-            <img src="/images/gear.svg" id="gear1">
+            <img
+            data-0="top:125%;transform:rotate(0deg);opacity:0;" 
+            data-50p="opacity:1;"
+            data-end="top:-15%;transform:rotate(-360deg);opacity:0;" src="/images/gear.svg" id="gear1" class="visible-lg gear">
+
+            <img
+            data-0="top:170%;transform:rotate(10deg);opacity:0;" 
+            data-50p="opacity:1;"
+            data-end="top:30%;transform:rotate(370deg);opacity:0;" src="/images/gear.svg" id="gear2" class="visible-lg gear">
           </div>
         </div>
         <div class="section">
@@ -100,11 +108,93 @@
           </div>
         </div>
         <div class="section">ddd</div>
-        <div class="section">ddd</div>
+
+
         <div class="section">
-        zzz
           <div class="container">
-            <div id="map"></div> 
+          <h2>What topics?</h2>
+            <div class="panel">
+              <div id="schedule" class="table-responsive">
+                <table class="table table-hover">
+                  <tr>
+                    <th>講者</th>
+                    <th>內容</th>
+                    <th>時間</th>
+                  </tr>
+                  <tr>
+                    <td>HackNTU & 所有講者</td>
+                    <td>介紹</td>
+                    <td>15min</td>
+                  </tr>
+                  <tr>
+                    <td>g0v ronnywang</td>
+                    <td>Open Data 應用概述</td>
+                    <td>30min</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Break</td>
+                    <td>5min</td>
+                  </tr>
+                  <tr>
+                    <td>g0v ronnywang</td>
+                    <td>g0v專案介紹</td>
+                    <td>30min+Q&A 10min</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Coffee Break</td>
+                    <td>20min</td>
+                  </tr>
+                  <tr>
+                    <td>infographic.tw</td>
+                    <td>資料視覺化</td>
+                    <td>80min</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Break</td>
+                    <td>5min</td>
+                  </tr>
+                  <tr>
+                    <td>Infoplat</td>
+                    <td>專案介紹</td>
+                    <td>30min+Q&A 10min</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Lighting Talk</td>
+                    <td>20min</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>自由交流</td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="section">
+          <div class="container">
+            <h2>When & Where?</h2>
+            <div id="time">
+              <h3 class="text-center">2015/5/30（六）14:00 ~ 18:00</h3>
+            </div>
+            <div id="location" class="center-block panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"> DO!T 共創公域</h3>
+              </div>
+              <div class="panel-body">
+                <div id="map"></div> 
+              </div>
+              <div class="panel-footer">
+                <h5>台北市大安區敦化南路二段216號23樓</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
