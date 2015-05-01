@@ -20,7 +20,7 @@
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
-<body data-spy="scroll">
+<body data-spy="scroll">          
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
@@ -39,11 +39,11 @@
            </div>
            <div class="collapse navbar-collapse" id="header-bar">
             <ul class="nav navbar-nav navbar-right" id="menu">
-              <li data-menuanchor="why"><a href="#why">Why?</a></li>
-              <li data-menuanchor="who"><a href="#who">Who?</a></li>
-              <li data-menuanchor="what"><a href="#what">What?</a></li>
-              <li data-menuanchor="when-where"><a href="#when-where">When/Where?</a></li>
-              <li ><a href="#top">TOP</a></li>
+              <li><a href="#why">Why?</a></li>
+              <li><a href="#who">Who?</a></li>
+              <li><a href="#what">What?</a></li>
+              <li><a href="#when-where">When/Where?</a></li>
+              <li><a href="#top">TOP</a></li>
             </ul>
           </div>
         </div>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4">
                   <div class="thumbnail">
-                    <img class="profile-img" src="..." alt="...">
+                    <img class="profile-img" src="/images/kirbywu.jpg" alt="...">
                     <div class="caption">
                       <h3>Kirby Wu</h3>
                       <p>
@@ -163,66 +163,167 @@
 
             <div class="section" id="what">
               <div class="container">
-                <h2>What topics?</h2>
+                <h2>What will be talked?</h2>
                 <div>
                   <div id="schedule" class="table-responsive">
-                    <table class="table table-hover">
-                      <tr>
-                        <th>講者</th>
-                        <th>內容</th>
-                        <th>時間</th>
-                      </tr>
-                      <tr>
-                        <td>HackNTU & 所有講者</td>
-                        <td>介紹</td>
-                        <td>15min</td>
-                      </tr>
-                      <tr>
-                        <td>g0v ronnywang</td>
-                        <td>Open Data 應用概述</td>
-                        <td>30min</td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>Break</td>
-                        <td>5min</td>
-                      </tr>
-                      <tr>
-                        <td>g0v ronnywang</td>
-                        <td>g0v專案介紹</td>
-                        <td>30min+Q&A 10min</td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>Coffee Break</td>
-                        <td>20min</td>
-                      </tr>
-                      <tr>
-                        <td>infographic.tw</td>
-                        <td>資料視覺化</td>
-                        <td>80min</td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>Break</td>
-                        <td>5min</td>
-                      </tr>
-                      <tr>
-                        <td>Infoplat</td>
-                        <td>專案介紹</td>
-                        <td>30min+Q&A 10min</td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>Lighting Talk</td>
-                        <td>20min</td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>自由交流</td>
-                        <td></td>
-                      </tr>
-                    </table>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-primary">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">
+                            <div class="row">
+                              <div class="col-xs-4"><b>講者</b></div>
+                              <div class="col-xs-4"><b>主題</b></div>
+                              <div class="col-xs-4"><b>時間</b></div>
+                            </div>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <div class="row">
+                              <div class="col-xs-4">HackNTU & 所有講者</div>
+                              <div class="col-xs-4">活動單位介紹</div>
+                              <div class="col-xs-4">15min</div>
+                            </div>
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" data-menu-ignore>
+                              <div class="row">
+                                <div class="col-xs-4">g0v Ronny Wang</div>
+                                <div class="col-xs-4">Open Data 概述</div>
+                                <div class="col-xs-4">30min</div>
+                              </div>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            什麼是五星open data？<br>為什麼我們需要五顆星的open data？<br>
+                            哪裡有 open data 可以尋找？<br>
+                            如果今天只有一到兩顆星的資料有什麼辦法可以讓他變成五顆星？
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <div class="row">
+                                <div class="col-xs-4"></div>
+                                <div class="col-xs-4">Break</div>
+                                <div class="col-xs-4">5min</div>
+                              </div>
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" data-menu-ignore>
+                              <div class="row">
+                                <div class="col-xs-4">g0v Ronny Wang</div>
+                                <div class="col-xs-4">專案介紹</div>
+                                <div class="col-xs-4">30min+10minQ&A</div>
+                              </div>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                            g0v黑客松長什麼樣子？<br>
+                            我是怎麼在g0v黑客松提案協作的？<br>
+                            怎麼從生活中觀察到的事物來當作專案的靈感來源？<br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <div class="row">
+                              <div class="col-xs-4"></div>
+                              <div class="col-xs-4">Coffee Break</div>
+                              <div class="col-xs-4">20min</div>
+                            </div>
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" data-menu-ignore>
+                              <div class="row">
+                                <div class="col-xs-4">infographic.tw Kirby Wu</div>
+                                <div class="col-xs-4">資料視覺化</div>
+                                <div class="col-xs-4">80min</div>
+                              </div>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            Introduction to Data Visualization <br>
+                            Skill set of full stack visualization specialist<br> 
+                            Visualization in web technology <br>
+                            Case studies <br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <div class="row">
+                              <div class="col-xs-4"></div>
+                              <div class="col-xs-4">Break</div>
+                              <div class="col-xs-4">5min</div>
+                            </div>
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading4">
+                          <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" data-menu-ignore>
+                              <div class="row">
+                                <div class="col-xs-4">InfoPlat</div>
+                                <div class="col-xs-4">專案介紹</div>
+                                <div class="col-xs-4">30min+10minQ&A</div>
+                              </div>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                          <div class="panel-body">
+                            4444
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <div class="row">
+                              <div class="col-xs-4"></div>
+                              <div class="col-xs-4">Lightning Talk</div>
+                              <div class="col-xs-4">15min</div>
+                            </div>
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <div class="row">
+                              <div class="col-xs-4"></div>
+                              <div class="col-xs-4">自由交流</div>
+                              <div class="col-xs-4"></div>
+                            </div>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

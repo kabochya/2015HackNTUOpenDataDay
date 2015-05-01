@@ -27,7 +27,7 @@ body {
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.footer {
+.footer{
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -96,7 +96,18 @@ body {
 }
 
 #schedule{
+  .panel,.panel-heading{
+    border-radius:0;
+    margin:0;
+  }
+  .panel-default{
+    color: #333;
+  }
+  .hidden-row{
+    padding: 0;
+  }
   table{
+    border-collapse: collapse;
     font-size:1.1em;
     color: #666;  
     td, th{
@@ -108,18 +119,12 @@ body {
   }
   
 }
-
-#fp-nav ul li a span{
-  background-color:#fff;
-}
-
 .section{
   $mask: lighten(rgb(113,201,232),10%);
   background-color:transparentize($mask,0.3);
   color: #fff;
   padding: 80px 0;
 }
-
 .section#top{
   height: 100vh;
   width: 100vw;
@@ -127,11 +132,13 @@ body {
   background-position: center;
   background-size: cover;    
 }
-
 blockquote{
   footer{
     color:#eee;
   }
+}
+.thumbnail{
+  border-radius: 0;
 }
 .gear{
   position:absolute;
@@ -145,10 +152,6 @@ blockquote{
     left:-8%;
     width: 20%;
   }
-#schedule{
-  color:#333;
-}
-
 #location{
   width: 40vh;
   .panel-title, .panel-footer{
@@ -164,14 +167,14 @@ blockquote{
 }
 .btn{
   background: transparent;
-    }
+}
 .btn-default{
-  border:1px solid #fff;
+  border:1px solid;
+  border-color: #fff;
   font-size: 1.5em;
-    &:hover{
-      border:1px solid #fff;
-      background-color: rgba(255,255,255,0.3);
-    }
+  &:hover{
+    border:1px solid #fff;
+    background-color: rgba(255,255,255,0.3);
   }
   /* CSS Transition */
   -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
