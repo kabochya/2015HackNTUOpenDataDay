@@ -14,18 +14,8 @@ var map = new GMaps({
     }
   });
 $(function(){
-  $('#fullpage').fullpage(
-    {
-      fixedElements:".header .footer",
-      autoScrolling: false,
-      fitToSection: false,
-      verticalCentered: false,
-
-      paddingTop:'60px',
-      paddingBottom:'40px',
-      anchors: ["top","why","who","what","when-where"],
-      menu: '#menu'
-    }
-  );
   var s = skrollr.init();
+  skrollr.menu.init(s, {
+    animate: true
+  })
 });
