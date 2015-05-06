@@ -2,7 +2,17 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "mixin.scss";
 // endbower
+
+.va-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .va{
+    //max-height: 50%;
+  }
+}
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -13,14 +23,13 @@ $icon-font-path: '../fonts/';
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-
+  padding-top: 40px;
   background-image: url("/images/sectionbg.png");
   background-position: center;
   //background-size:cover;
   background-attachment: fixed;
   font-size:1.5em;
+  overflow-x: hidden;
 }
 .container-fluid{
   padding:0;
@@ -74,9 +83,21 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-  
   .container{
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px){
+  body{
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px){
+  body{
+    padding-bottom: 0px;
+  }
+  .va-wrapper{
+    display: block;
   }
 }
 
@@ -92,7 +113,21 @@ body {
 #menu{
   li{
     border-right: dotted 1px #ccc;
+    a{
+      padding: 15px 10px;
+    }
   }
+}
+.profile{
+  padding: 0 20px 20px;
+  &:not(:first-child){
+    padding: 20px;
+    border-top: solid 1px #fff;  
+  }
+  
+}
+.profile-img img{
+  width: 100%;
 }
 
 #schedule{
@@ -106,28 +141,17 @@ body {
   .hidden-row{
     padding: 0;
   }
-  table{
-    border-collapse: collapse;
-    font-size:1.1em;
-    color: #666;  
-    td, th{
-      border-color: #999;
-    }
-    tr:hover{
-      background-color: rgba(255,255,255,0.3);
-    }
-  }
-  
 }
 .section{
   $mask: lighten(rgb(113,201,232),10%);
   background-color:transparentize($mask,0.3);
   color: #fff;
   padding: 80px 0;
+
+  width: 100vw;
 }
 .section#top{
   height: 100vh;
-  width: 100vw;
   background-image: url("/images/titlelogo.png");
   background-position: center;
   background-size: cover;    
@@ -136,9 +160,6 @@ blockquote{
   footer{
     color:#eee;
   }
-}
-.thumbnail{
-  border-radius: 0;
 }
 .gear{
   position:absolute;

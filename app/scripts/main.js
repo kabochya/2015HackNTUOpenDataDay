@@ -1,5 +1,6 @@
 /* jshint devel:true */
 console.log('\'Allo \'Allo!');
+
 var map = new GMaps({
     el:'#map',
     lat:25.0221324,
