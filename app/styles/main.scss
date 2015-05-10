@@ -100,7 +100,12 @@ body {
     display: block;
   }
 }
-
+#hackntu-logo{
+  width: 100%;
+}
+#hackntu-icon{
+  vertical-align: top;
+}
 #apply{
   position: absolute;
   width: 200px;
@@ -108,7 +113,14 @@ body {
   left: 50%;
   margin-left: -100px;
   color: #fff;
-
+}
+#bottom-apply{
+  position: absolute;
+  width: 200px;
+  //bottom:10%;
+  left: 50%;
+  margin-left: -100px;
+  color: #fff;
 }
 #menu{
   li{
