@@ -1,1 +1,1 @@
-"use strict";var map=new GMaps({el:"#map",lat:25.0221324,lng:121.547979});map.addMarker({lat:25.0221324,lng:121.547979,title:"DO!T 共創公域",infoWindow:{content:'<p style="color:#999;">DO!T 共創公域</p>'}}),$(function(){var n=skrollr.init();skrollr.menu.init(n,{animate:!0})});
+"use strict";var map=new GMaps({el:"#map",lat:25.0221324,lng:121.547979});map.addMarker({lat:25.0221324,lng:121.547979,title:"DO!T TAIWAN 共創公域",infoWindow:{content:'<p style="color:#999;">DO!T TAIWAN 共創公域</p>'}}),$(function(){var n=skrollr.init();skrollr.menu.init(n,{animate:!0})});
