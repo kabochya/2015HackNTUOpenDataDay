@@ -23,7 +23,7 @@ $icon-font-path: '../fonts/';
 /* Space out content a bit */
 body {
   padding-top: 40px;
-  background-image: url("images/sectionbg.png");
+  background-image: url("../images/sectionbg.png");
   background-position: center;
   //background-size:cover;
   background-attachment: fixed;
@@ -163,7 +163,7 @@ body {
 }
 .section#top{
   height: 100vh;
-  background-image: url("images/titlelogo.png");
+  background-image: url("../images/titlelogo.png");
   background-position: center;
   background-size: cover;    
 }
