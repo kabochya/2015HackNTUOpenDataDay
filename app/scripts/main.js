@@ -10,11 +10,7 @@ var map = new GMaps({
   map.addMarker({
     lat:25.0221324,
     lng:121.547979,
-<<<<<<< Updated upstream
     title:"DO!T TAIWAN 共創公域",
-=======
-    title:'DO!T 共創公域',
->>>>>>> Stashed changes
     infoWindow: {
       content: '<p style="color:#999;">DO!T TAIWAN 共創公域</p>'
     }
