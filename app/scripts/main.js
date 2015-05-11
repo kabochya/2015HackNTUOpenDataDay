@@ -10,7 +10,7 @@ var map = new GMaps({
   map.addMarker({
     lat:25.0221324,
     lng:121.547979,
-    title:"DO!T TAIWAN 共創公域",
+    title:'DO!T TAIWAN 共創公域',
     infoWindow: {
       content: '<p style="color:#999;">DO!T TAIWAN 共創公域</p>'
     }
