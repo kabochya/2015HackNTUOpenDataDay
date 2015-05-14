@@ -63,42 +63,7 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 992px) {
-  .container {
-    max-width: 900px;
-  }
 
-  /* Remove the padding we set earlier */
-  // .header,
-  // .footer {
-  //   padding-left: 0;
-  //   padding-right: 0;
-  // }
-
-  // /* Space out the masthead */
-  // .header {
-  //   margin-bottom: 30px;
-  // }
-}
-
-@media screen and (max-width: 991px) {
-  .container{
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px){
-  body{
-    padding-bottom: 40px;
-  }
-}
-@media screen and (max-width: 767px){
-  body{
-    padding-bottom: 0px;
-  }
-  .va-wrapper{
-    display: block;
-  }
-}
 #hackntu-logo{
   width: 100%;
 }
@@ -108,7 +73,7 @@ body {
 #apply{
   position: absolute;
   width: 200px;
-  bottom:10%;
+  top: 80vh;
   left: 50%;
   margin-left: -100px;
   color: #fff;
@@ -217,4 +182,47 @@ blockquote{
   -webkit-border-radius: 0;
   -moz-border-radius:    0;
   border-radius:         0;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+
+  /* Remove the padding we set earlier */
+  // .header,
+  // .footer {
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
+
+  // /* Space out the masthead */
+  // .header {
+  //   margin-bottom: 30px;
+  // }
+}
+
+@media screen and (max-width: 991px) {
+  .container{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px){
+  body{
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px){
+  body{
+    padding-bottom: 0px;
+  }
+  .va-wrapper{
+    display: block;
+  }
+  #location{
+    width: 80vw;
+    .panel-body{
+      height: 80vw;
+    }
+  }
 }
